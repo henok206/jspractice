@@ -106,3 +106,12 @@
 
 //document.write(formatedKvArr);
 // console.log(formatedKvArr);//expected output{1,10},{2,20},{3,30}
+ //adding value using map
+ const couPiraCity=new Map();
+ couPiraCity.set('Ethiopia','Addis');
+ couPiraCity.set('keniya','Nayirobi');
+ couPiraCity.set('Engiland','london');
+ couPiraCity.set('sudan','kartum');
+ 
+ //console.log(couPiraCity);
+ console.log(couPiraCity.get('Ethiopia'));
