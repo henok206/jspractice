@@ -107,11 +107,124 @@
 //document.write(formatedKvArr);
 // console.log(formatedKvArr);//expected output{1,10},{2,20},{3,30}
  //adding value using map
- const couPiraCity=new Map();
+  const couPiraCity=new Map();
  couPiraCity.set('Ethiopia','Addis');
  couPiraCity.set('keniya','Nayirobi');
  couPiraCity.set('Engiland','london');
  couPiraCity.set('sudan','kartum');
  
- //console.log(couPiraCity);
- console.log(couPiraCity.get('Ethiopia'));
+//  //console.log(couPiraCity);
+//  console.log(couPiraCity.get('Ethiopia'));
+//getting all value by using loop
+//  for(const country of couPiraCity){
+//    //console.log(country);
+//    document.write(country)
+//  }
+  // for(const [country,city]of couPiraCity ){
+  //   //console.log(country,city);
+  //   document.write(country,city + "<br>");
+  // }
+  //spread operator
+  //add elements in the exiting array in to a new array
+  // let oddnum=[1,3,5,9];
+  // let evenNum=[...oddnum,4,6,8,10];
+  // document.write(evenNum);
+//pass element of array as argument
+// function addThreeNumber(x,y,z){
+//   console.log(x+y+z);
+// }
+// let arrNum=[10,20,30];
+// addThreeNumber(...arrNum);//passing array as argument by spread operator
+// copy arry by using spread operator(...)
+// let arr1=[1,2,3,4,5,6,7];
+// let arr2=[...arr1];
+// arr2.push(10);
+//console.log(arr2);
+//document.write(arr2);
+//array conactinate using concat method
+// arr1.concat(arr2);
+//console.log(arr2);
+// document.write(arr2);
+//array conactinate using spread operator method
+// arr1=[2,4,6,8];
+// arr2=[1,3,5,7];
+// arr1=[...arr1,"Henok",...arr2];
+// document.write(arr1);
+//spread operator tp copy object
+// let user={
+//     uname:'Henok',
+//     title:'Developer',
+//     country:'Ethiopia',
+//     city:'Addiss'
+// }
+// let copedUser={...user};
+// //document.write(copedUser);
+// console.log(copedUser);
+//Destracturing object
+// let rectangle={
+//   width:10,
+//   height:20,
+//   area:200
+// }
+// let {width,height,area}=rectangle;
+// document.write(width,height,area);
+//renaming the Destructer
+// let{width:w,height:h,area:a,peremeter:p}=rectangle;
+// document.write(w,h,a,p);
+//calculate perimeter with out destructering
+// //let calPerimeter=rectangle=>{
+//   return 2*(rectangle.width+rectangle.height);
+// }
+//document.write(calPerimeter(rectangle));
+//console.log(calPerimeter(rectangle));
+//calculate parimeter with distructer
+// const calPerimeter=({width,height})=>{
+//   return 2*(width+height);
+// }
+// document.write(calPerimeter(rectangle));
+//assign variable from array
+// let [a,b,...rest]=[1,2,3,4,5,6];//...rest operator
+//console.log(a);//1
+//console.log(b);//2
+// console.log(rest);//3,4,5,6
+//Destracting array
+// let fullStack=[
+//   ['Html','css','js'],
+//   ['express','Node','MongoDb']
+// ];
+// let[frontEnd,backend]=fullStack;
+// document.write(frontEnd);
+// document.write("<br>");
+// document.write(backend);
+//if you want to omit use comma
+// let nameList=['Abebe','kebede','Tewdros','Bisirat'];
+// let[,secondName,,fourthName]=nameList;
+// document.write(secondName,fourthName);
+//Destructering object iteration
+// let toDoList=[
+//   { task:"writeProposal",
+//     time:'4/22/2022',
+//     compleated:true
+//   },
+//   { task:"preparePowerPoint",
+//   time:'4/20/2022',
+//   compleated:true
+// },
+// { task:"presentProposal",
+// time:'4/21/2022',
+// compleated:false
+// }
+// ];
+// for(const{task,time,compleated}of toDoList){
+//   document.write(task,time,compleated+"<br>");
+// 
+//convert arry to object
+const students = [
+  ['David', ['HTM', 'CSS', 'JS', 'React'], [98, 85, 90, 95]],
+  ['John', ['HTM', 'CSS', 'JS', 'React'], [85, 80, 85, 80]]
+];
+console.log(students);
+// let conToObject=({},students);
+// console.log(conToObject);
+
+
