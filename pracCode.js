@@ -226,5 +226,76 @@
 // console.log(students);
 // let conToObject=({},students);
 // console.log(conToObject);
+//Regular Expression
+//creating pattern by using RegExpression constructor
+//with out flag
+// let pattern="Henok";
+// let regExp=new RegExp(pattern);
+// console.log(regExp);
+//creating regular Expression with flag(global and case insensitive)
+// let pattern="love";
+// let flag='gi';
+// let regExp=new RegExp(pattern,flag);
+//creating apattern with outRegular Expression
+// let regExp=/Henok/gi;
+//regular expresion object method
+//test()for mathch
+// let str="i love ethiopia";
+// let pattern=/love/
+// let result=pattern.test(str);
+// document.write(result);
+//by using string method match()
+// let str="I love to be here";
+// let pattern=/love/gi;
+// let result=str.match(pattern);
+// document.write(result);
+// console.log(result);
+// by using string method search() it return index
+// let str="I love to be here";
+// let pattern=/love/gi;
+// let result=str.search(pattern);
+// document.write(result);//retun index 2
+//console.log(result);
+// replace asubstring
+// let str="I love to be here,hope every one love too be here";
+// let pattern=/love/gi;
+// let result=str.replace(pattern, 'like');
+// document.write(result);//I like to be here,hope every one like too be here
+//console.log(result);
 
+//console log object method
+// console.log("Hello,world");//Hello,world
+// console.log("%cHello world","color:green");//Hello world green color
 
+//console.warn() for warning
+//console.warn("Don't do it again");
+//console error
+// console.error("it has error");
+//console table
+// let names=['Abebe','Kebede','Aster','Mekides'];
+// console.table(names);
+// let userPro={
+//   name:'Henok',
+//   prpfessional:'Developer',
+//   country:'Ethiopia',
+//   city:'Addiss Ababa'
+// };
+// console.table(userPro);
+
+//console.info
+// console.info("Reserch methodology exam will be next week");
+
+//console.assert
+//console.assert(5>4, '5 is greater than 4');//no resut since true
+//console.assert(5>6,"it is false");//assertation failed,it is false
+ //console.count();
+//  let fun=()=>{
+//    console.count("function has been count");
+
+//  }
+//  fun();
+//  fun();
+//  fun();
+//  fun();
+//console.clear
+// console.clear();
