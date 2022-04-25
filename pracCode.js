@@ -299,3 +299,43 @@
 //  fun();
 //console.clear
 // console.clear();
+//Error Handling
+// let convertToBirr=(dollar)=>{
+//   return dollar*72;
+// }
+
+// try {
+//   let amountOfBirr=console.log(convertToBirr(five));
+// } catch (error) {
+//   console.log('name of the error',error.name);
+//   console.log(' error message',error.message);
+// }
+// finally{
+//   console.log("I will be excuted nomater what");
+
+// }
+
+//class and objects
+//  class Person{
+//    constructor(firstName,lastName){
+//      this.firstName=firstName;
+//      this.lastName=lastName;
+//    }
+//     getFullName(){
+//     let fullName=`${this.firstName} ${this.lastName} This is my full name`;
+//     return fullName;
+//    }
+//    editName(newName){
+//      let myName=newName.split(" ");
+//      this.firstName=myName[0];
+//      this.lastName=myName[1];
+//    }
+//  }
+ 
+
+
+// let person=new Person("Henok","Setegne");
+// console.log(person.getFullName());
+// person.editName("Heni Setegne");
+// console.log(person.getFullName());
+
