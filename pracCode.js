@@ -334,8 +334,43 @@
  
 
 
-// let person=new Person("Henok","Setegne");
-// console.log(person.getFullName());
-// person.editName("Heni Setegne");
-// console.log(person.getFullName());
+// let person1=new Person("Henok","Setegne");
+// console.log(person1.getFullName());
+// person1.editName("Heni Setegne");
+// console.log(person1.getFullName());
+// let person2= new Person('Bilal','Shikur');
+// let person3= new Person('Lidia','Tesfayie');
+// console.log(person2.getFullName());
+// console.log(person3.getFullName());
 
+ //defualt value with constructor
+  class Student{
+    constructor(
+      firstName="Abebe",
+      lastName="Haregawi",
+      age=65,
+      profesinalism="programer",
+      country="Ethiopi",
+      city="Addis Ababa"
+
+      )
+      {
+        
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.age=age;
+        this.profesinalism=profesinalism;
+        this.country=country;
+        this.city=city;
+      }
+      
+  }
+    let student1=new Student();
+    let student2=new Student('Biniyam','zewidu',34,'FrontedDEveloper','Ethiopia','Addis');
+    let student3=new Student('Robel','Medin', 22,'programer','Ethiopia','Addis');
+    let student4=new Student('Tekilu','Kebede',31,'Ethiopia','Addis');
+   
+   console.log(student1);
+   console.log(student2);
+   console.log(student3);
+   console.log(student4);
