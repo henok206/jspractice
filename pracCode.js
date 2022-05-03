@@ -344,33 +344,61 @@
 // console.log(person3.getFullName());
 
  //defualt value with constructor
-  class Student{
-    constructor(
-      firstName="Abebe",
-      lastName="Haregawi",
-      age=65,
-      profesinalism="programer",
-      country="Ethiopi",
-      city="Addis Ababa"
+  // class Student{
+  //   constructor(
+  //     firstName="Abebe",
+  //     lastName="Haregawi",
+  //     age=65,
+  //     profesinalism="programer",
+  //     country="Ethiopi",
+  //     city="Addis Ababa"
 
-      )
-      {
+  //     )
+  //     {
         
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
-        this.profesinalism=profesinalism;
-        this.country=country;
-        this.city=city;
-      }
+  //       this.firstName=firstName;
+  //       this.lastName=lastName;
+  //       this.age=age;
+  //       this.profesinalism=profesinalism;
+  //       this.country=country;
+  //       this.city=city;
+  //     }
       
-  }
-    let student1=new Student();
-    let student2=new Student('Biniyam','zewidu',34,'FrontedDEveloper','Ethiopia','Addis');
-    let student3=new Student('Robel','Medin', 22,'programer','Ethiopia','Addis');
-    let student4=new Student('Tekilu','Kebede',31,'Ethiopia','Addis');
+  // }
+  //   let student1=new Student();
+  //   let student2=new Student('Biniyam','zewidu',34,'FrontedDEveloper','Ethiopia','Addis');
+  //   let student3=new Student('Robel','Medin', 22,'programer','Ethiopia','Addis');
+  //   let student4=new Student('Tekilu','Kebede',31,'Ethiopia','Addis');
    
-   console.log(student1);
-   console.log(student2);
-   console.log(student3);
-   console.log(student4);
+  //  console.log(student1);
+  //  console.log(student2);
+  //  console.log(student3);
+  //  console.log(student4);
+  //Json
+  let usersProf=`{
+    "users":[
+      {
+        "firstName":"Abebe",
+         "lastName":"kebede",
+         "age":22,
+         "email":"abebe@yahoo.com"
+
+      },
+      {
+        "firstName":"Aster",
+         "lastName":"Aweqe",
+         "age":42,
+         "email":"aster@yahoo.com"
+
+      },
+      {
+        "firstName":"Lidetu",
+         "lastName":"Ayalew",
+         "age":48,
+         "email":"lidetu@yahoo.com"
+
+      }
+    ]
+  }`
+  let userObj=JSON.parse(usersProf,undefined,4);
+  console.log(userObj);
