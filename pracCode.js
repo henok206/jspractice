@@ -375,30 +375,62 @@
   //  console.log(student3);
   //  console.log(student4);
   //Json
-  let usersProf=`{
-    "users":[
-      {
-        "firstName":"Abebe",
-         "lastName":"kebede",
-         "age":22,
-         "email":"abebe@yahoo.com"
+  // let usersProf=`{
+  //   "users":[
+  //     {
+  //       "firstName":"Abebe",
+  //        "lastName":"kebede",
+  //        "age":22,
+  //        "email":"abebe@yahoo.com"
 
-      },
-      {
-        "firstName":"Aster",
-         "lastName":"Aweqe",
-         "age":42,
-         "email":"aster@yahoo.com"
+  //     },
+  //     {
+  //       "firstName":"Aster",
+  //        "lastName":"Aweqe",
+  //        "age":42,
+  //        "email":"aster@yahoo.com"
 
-      },
-      {
-        "firstName":"Lidetu",
-         "lastName":"Ayalew",
-         "age":48,
-         "email":"lidetu@yahoo.com"
+  //     },
+  //     {
+  //       "firstName":"Lidetu",
+  //        "lastName":"Ayalew",
+  //        "age":48,
+  //        "email":"lidetu@yahoo.com"
 
-      }
-    ]
-  }`
-  let userObj=JSON.parse(usersProf,undefined,4);
-  console.log(userObj);
+  //     }
+  //   ]
+  // }`
+  // let userObj=JSON.parse(usersProf,undefined,4);
+  // console.log(userObj);
+  //using reviver function with json.parse()
+  // let usersProf=`{
+  //   "users":[
+  //     {
+  //       "firstName":"Abebe",
+  //        "lastName":"kebede",
+  //        "age":22,
+  //        "email":"abebe@yahoo.com"
+
+  //     },
+  //     {
+  //       "firstName":"Aster",
+  //        "lastName":"Aweqe",
+  //        "age":42,
+  //        "email":"aster@yahoo.com"
+
+  //     },
+  //     {
+  //       "firstName":"Lidetu",
+  //        "lastName":"Ayalew",
+  //        "age":48,
+  //        "email":"lidetu@yahoo.com"
+
+  //     }
+  //   ]
+  // }`
+  // let userObj=JSON.parse(usersProf,(key,value)=>{
+  //   let newValue=
+  //   typeof value=='string'&& key!='email'? value.toUpperCase():value
+  //   return newValue;
+  // })
+  // console.log(userObj);
