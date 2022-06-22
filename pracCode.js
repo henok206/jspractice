@@ -107,11 +107,11 @@
 //document.write(formatedKvArr);
 // console.log(formatedKvArr);//expected output{1,10},{2,20},{3,30}
  //adding value using map
-  const couPiraCity=new Map();
- couPiraCity.set('Ethiopia','Addis');
- couPiraCity.set('keniya','Nayirobi');
- couPiraCity.set('Engiland','london');
- couPiraCity.set('sudan','kartum');
+//   const couPiraCity=new Map();
+//  couPiraCity.set('Ethiopia','Addis');
+//  couPiraCity.set('keniya','Nayirobi');
+//  couPiraCity.set('Engiland','london');
+//  couPiraCity.set('sudan','kartum');
  
 //  //console.log(couPiraCity);
 //  console.log(couPiraCity.get('Ethiopia'));
@@ -434,3 +434,23 @@
   //   return newValue;
   // })
   // console.log(userObj);
+  // how to use map
+  const people=
+  [
+    {firstName:"Abel",
+     age:24,
+     position:"Developer"
+    },
+    {firstName:"Aster",
+    age:34,
+    position:"Manager"
+   },
+   {firstName:"Helen",
+   age:27,
+   position:"Intern"
+  },
+  ];
+  const ages=people.map((person)=>{
+      return person.age;
+  });
+  console.log(ages);
